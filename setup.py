@@ -46,7 +46,7 @@ setup(
     url='http://github.com/cjmeyer/actions',
     test_suite='py.test',
     tests_require=['pytest', 'mock'],
-    install_requires=['jinja2'],
+    install_requires=['path.py', 'jinja2'],
     packages=find_packages(exclude=[]),
     zip_safe=True
 )
