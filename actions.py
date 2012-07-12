@@ -1,22 +1,13 @@
 #! /usr/bin/env python
 
 
-from path import path
+from path import path as Path
 
 
 class ActionContext(object):
-    def __init__(self, srcpath=None, dstpath=None):
-        self._srcpath = path(srcpath) if srcpath else path.getcwd()
-        self._dstpath = path(dstpath) if dstpath else path.getcwd()
+    def __init__(self):
+        pass
 
-    @property
-    def srcpath(self):
-        return self._srcpath
-
-    @property
-    def dstpath(self):
-        return self._dstpath
-
-    def empty_file(self, dst):
-        (self.dstpath / dst).touch()
+    def add_search_path(self, path):
+        pass
 
